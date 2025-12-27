@@ -1,0 +1,275 @@
+.show-details-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  background: white;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.back-btn:hover {
+  border-color: #1976d2;
+  color: #1976d2;
+}
+
+.show-details-hero {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-details-image {
+  width: 100%;
+  height: 550px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.details-image {
+  width: 100%;
+  height: 100%;
+}
+
+.show-details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.show-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.show-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.favorite-btn-large {
+  padding: 12px 24px;
+  background: white;
+  color: #333;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.favorite-btn-large:hover {
+  border-color: #1976d2;
+  transform: scale(1.05);
+}
+
+.favorite-btn-large.active {
+  background: #ff4081;
+  color: white;
+  border-color: #ff4081;
+}
+
+.show-rating {
+  margin: 8px 0;
+}
+
+.show-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.meta-item {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.meta-item strong {
+  color: #333;
+  margin-right: 4px;
+}
+
+.show-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.genre-badge {
+  padding: 6px 16px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.show-summary {
+  line-height: 1.7;
+}
+
+.show-summary h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.show-summary p {
+  color: #555;
+  margin: 0;
+}
+
+.show-schedule-info,
+.show-network {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.show-schedule-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.official-site-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #1976d2;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.official-site-link:hover {
+  background: #1565c0;
+}
+
+.show-details-sections {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.schedule-section {
+  margin-top: 40px;
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.schedule-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.toggle-schedule-btn {
+  padding: 10px 20px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-schedule-btn:hover {
+  background: #1565c0;
+}
+
+@media (max-width: 1024px) {
+  .show-details-hero {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .show-details-image {
+    height: 400px;
+  }
+
+  .show-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .show-details-page {
+    padding: 16px;
+  }
+
+  .show-header {
+    flex-direction: column;
+  }
+
+  .favorite-btn-large {
+    width: 100%;
+  }
+
+  .show-details-image {
+    height: 350px;
+  }
+
+  .show-title {
+    font-size: 1.75rem;
+  }
+
+  .show-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .schedule-section {
+    padding: 20px;
+  }
+
+  .schedule-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .toggle-schedule-btn {
+    width: 100%;
+  }
+}
