@@ -43,24 +43,26 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, isSticky = true }) => {
   return (
     <div className={`search-bar-wrapper ${isSticky ? 'sticky' : ''} ${isScrolled ? 'scrolled' : ''}`}>
       <form className="search-bar" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          className="search-input"
-          placeholder="Search TV shows..."
-          value={query}
-          onChange={handleInputChange}
-          aria-label="Search TV shows"
-        />
-        {query && (
-          <button
-            type="button"
-            className="clear-btn"
-            onClick={handleClear}
-            aria-label="Clear search"
-          >
-            ✕
-          </button>
-        )}
+        <div className="search-input-wrapper">
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Search TV shows..."
+            value={query}
+            onChange={handleInputChange}
+            aria-label="Search TV shows"
+          />
+          {query && (
+            <button
+              type="button"
+              className="clear-btn"
+              onClick={handleClear}
+              aria-label="Clear search"
+            >
+              ✕
+            </button>
+          )}
+        </div>
         <button type="submit" className="search-btn" aria-label="Search">
           🔍 Search
         </button>
